@@ -1,0 +1,167 @@
+/*css resets*/
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+h2{
+    margin-top: 0;
+}
+h3{
+    margin: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body{
+    margin: 0;
+    background-image: url('/assets/white-gold-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow-y: hidden;
+}
+/*ensures that the page is scrollable while the background-image
+remains in the same position*/
+#root{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header > img[alt="mStile Logo"]{
+    width: 192px;
+    opacity: 0.33;
+}
+
+nav{
+    width: 760px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+nav > ul{
+    margin: 0;
+    padding: 0;
+    display: contents;
+}
+
+nav > ul > li{
+    font-size: 24px;
+}
+
+nav > ul > li:not(nav > ul > li:last-child)::after{
+    content: '|';
+    margin: 0 48px;
+}
+
+header > .header-banner{
+    width: 1043px;
+    height: 201px;
+    color: white;
+    background-image: url('/assets/header-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(90%);
+    margin-top: 48px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-banner > h1,
+.header-banner > div{
+    font-family: "Libre Baskerville";
+}
+
+.header-banner > h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -16px;
+    margin-bottom: 0;
+}
+
+.header-banner > div{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+footer{
+    background-color:rgba(100, 82, 82, 0.33);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    font-family: "Inter";
+    min-width: 100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+footer > .footer-column{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer-column.footer-column.company-name{
+    margin-right: 176px;
+}
+
+.footer-column.company-name{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-column.company-name > h3{
+    font-weight: 800;
+    font-size: 24px;
+    width: 215px;
+    text-align: center;
+}
+
+.footer-column:not(.company-name),
+.footer-column:not(.company-name) > h3{
+    font-weight: 500;
+}
+
+.footer-column:not(.company-name) :not(:last-child){
+    margin-bottom: 24px;
+}
+
+.footer-column > ul{
+    display: contents;
+}
+
+.footer-column li{
+    color: rgba(69, 69, 69, 1);
+}
+
+.footer-column:not(.company-name):not(.footer-column:last-child){
+    margin-right: 92px;
+}

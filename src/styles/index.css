@@ -1,0 +1,77 @@
+/*main content*/
+main{
+    width: 1043px;
+    margin-top: 128px;
+}
+
+p,
+p:not(p:last-of-type)
+{
+    margin-bottom: 32px;
+}
+
+.feature-container{    
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.feature-container:not(.stretch-ceiling){
+    display: flex;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.feature-container:not(.stretch-ceiling) > img{
+    align-self: baseline;
+}
+
+.feature-container h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:nth-child(2 of .feature-container){
+    flex-flow: row-reverse nowrap;
+}
+
+:nth-child(1 of .feature-container) > .feature-text-wrapper{
+    margin-left: 64px;
+}
+
+
+:nth-child(2 of .feature-container) > .feature-text-wrapper{
+    margin-right: 64px;
+}
+.feature-container.stretch-ceiling > p:nth-of-type(1){
+    margin-bottom: 32px;
+}
+.feature-container.stretch-ceiling > img:nth-of-type(1){
+    margin-left: 64px;
+}
+
+.middle-image{
+    width: 1043px;
+    margin-bottom: 128px;
+}
+
+.floating-image-1{
+    float: right;
+}
+
+.main-banner-1{
+    width: 1043px;
+    margin-top: 92px;
+    margin-bottom: 64px;
+}
+
+.main-banner-1 + p,
+.main-banner-1 + p + div{
+    padding: 0 24px;
+}
+
+.main-banner-1 + p + div{
+    margin-bottom: 128px;
+}
