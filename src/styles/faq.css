@@ -1,0 +1,40 @@
+main{
+    font-family: "Libre Baskerville";
+}
+
+main h1{
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin: 92px 0 0 0;
+}
+
+main .faq-list-container{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 92px 128px 0 128px;
+    width: 920px;
+}
+
+.faq-item-container:not(:last-child){
+    margin-bottom: 92px;
+}
+
+.faq-item-container h2{
+    margin-bottom: 48px;
+}
+
+.faq-item-container > div{
+    font-size: 24px;
+    font-style: italic;
+}
+
+/*Styling contact form for this page specifically*/
+main .contact-form{
+    margin: 92px 0 92px 128px;
+    width: 768px;
+}
+
+main .form-element input{
+    width: 250px;
+}

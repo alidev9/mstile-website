@@ -5,8 +5,7 @@ main{
 }
 
 p,
-p:not(p:last-of-type)
-{
+p:not(p:last-of-type){
     margin-bottom: 32px;
 }
 

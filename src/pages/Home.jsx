@@ -1,8 +1,7 @@
-import './styles/base-styles.css'
-import './styles/index.css'
+import '../styles/home.css'
 
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 
 function Home(){
     return (
