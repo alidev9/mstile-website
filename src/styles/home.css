@@ -4,15 +4,12 @@ main{
     margin-top: 128px;
 }
 
-p,
-p:not(p:last-of-type){
+p:not(:last-of-type){
     margin-bottom: 32px;
 }
 
 .feature-container{    
     font-family: "Libre Baskerville";
-    font-style: italic;
-    font-size: 24px;
     box-sizing: border-box;
 }
 
@@ -67,10 +64,10 @@ p:not(p:last-of-type){
 }
 
 .main-banner-1 + p,
-.main-banner-1 + p + div{
+.main-banner-1 + p + p{
     padding: 0 24px;
 }
 
-.main-banner-1 + p + div{
+.main-banner-1 + p + p{
     margin-bottom: 128px;
 }

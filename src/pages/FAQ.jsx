@@ -45,7 +45,7 @@ function FAQ(){
                     return (
                         <div key={faqItem.id} className="faq-item-container">
                                 <h2>{faqItem.question}</h2>
-                                <div>{faqItem.answer}</div>
+                                <p>{faqItem.answer}</p>
                         </div>
                     )
                 })}

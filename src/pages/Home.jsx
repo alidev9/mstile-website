@@ -5,11 +5,9 @@ import Footer from '../components/Footer.jsx'
 
 function Home(){
     return (
-        <>
-            <Header />
             <main>
                 <div className="feature-container">
-                    <img src="/assets/float-image-1.jpg" alt=""/>
+                    <img src="/assets/homepage-images/float-image-1.jpg" alt=""/>
                     <div className="feature-text-wrapper">
                         <h2>
                             Award-Winning Design expertise...
@@ -23,7 +21,7 @@ function Home(){
                     </div>
                 </div>
                 <div className="feature-container">
-                    <img src="/assets/float-image-2.jpg" alt=""/>
+                    <img src="/assets/homepage-images/float-image-2.jpg" alt=""/>
                     <div className="feature-text-wrapper">
                         <h2>
                             Attention to detail...
@@ -36,30 +34,28 @@ function Home(){
                         </p>
                     </div>
                 </div>
-                <img src="/assets/stretch-ceiling-design-1 1.jpg" alt="Stretch Ceiling Design" className="middle-image"/>
+                <img src="/assets/homepage-images/stretch-ceiling-design-1 1.jpg" alt="Stretch Ceiling Design" className="middle-image"/>
                 <div className="feature-container stretch-ceiling">
                     <h2>Introducing Innovation...</h2>
                     <p>
                         Alongside designing and fitting bathrooms, mStile also provides an array of professional tiling options, LVT and Vinyl fitting as well as our 3D illuminated  ceiling confgurations for customers who would like to add something totally different to their home.
                     </p>
-                    <img src="/assets/float-image-3.jpg" alt="" className="floating-image-1"/>
+                    <img src="/assets/homepage-images/float-image-3.jpg" alt="" className="floating-image-1"/>
                     <p>
                         3D illuminated ceilings, also known as Stretch Ceilings are a smart way to give your bathroom unqiue flare and maxermise the 'wow' effect. Made from highly durable PVC streach material  which gives increased acoustic effect, and is easily washable making an excelelnt addtion to a customised bathroom.
                     </p>
-                    <div>
+                    <p>
                         If you'd like to find out more about the product in detail please <a href="#">click here</a>.
-                    </div>
-                    <img src="/assets/acoustic-wall-covering-designer-company 1.jpg" alt="" className="main-banner-1"/>
+                    </p>
+                    <img src="/assets/homepage-images/acoustic-wall-covering-designer-company 1.jpg" alt="" className="main-banner-1"/>
                     <p>
                         Streach seilings can be applied in all types of rooms in your home as far as your imagination can stretch, from bathrooms, to bedrooms, living rooms, conference rooms, kitchens, garages even a commerical setting; ideal for offices, pub bathrooms, hairdressers, restaurants, spa centres and many more.
                     </p>
-                    <div>
+                    <p>
                         An interesting feature to impress anyone at either your home or any business place.
-                    </div>
+                    </p>
                 </div>
-            </main>
-            <Footer />
-        </>   
+            </main>  
     )
 }
 

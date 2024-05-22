@@ -9,6 +9,8 @@ a{
 
 p{
     margin: 0;
+    font-size: 24px;
+    font-style: italic;
 }
 
 h2{
@@ -165,3 +167,4 @@ footer > .footer-column{
 .footer-column:not(.company-name):not(.footer-column:last-child){
     margin-right: 92px;
 }
+
