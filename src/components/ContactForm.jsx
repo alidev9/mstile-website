@@ -26,14 +26,14 @@ function ContactForm(){
     return (
         <div className="contact-form">
             <div className="contact-details-company">
-                <img src="/assets/mstile-logo.png" alt="mStile Logo" />
+                <img src="/mstile-logo.png" alt="mStile Logo" />
 
                 <div className="company-contact-data-container">
-                    <CompanyContactData icon={'/assets/icons/phone-icon.svg'}
+                    <CompanyContactData icon={'/icons/phone-icon.svg'}
                     alt={'Phone Number'} data={'+1 254 8547 956'}/>
-                    <CompanyContactData icon={'/assets/icons/email-icon.svg'}
+                    <CompanyContactData icon={'/icons/email-icon.svg'}
                     alt={'E-mail'} data={'info@mStile.com'}/>
-                    <CompanyContactData icon={'/assets/icons/map-icon.svg'}
+                    <CompanyContactData icon={'/icons/map-icon.svg'}
                     alt={'Location'} data={'California 62639'}/>
                 </div>
             </div>

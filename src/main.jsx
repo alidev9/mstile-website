@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 //import Home from './pages/Home.jsx'
 //import FAQ from './pages/FAQ.jsx'
 import AboutUs from './pages/AboutUs.jsx'
+//import Services from './pages/Services.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

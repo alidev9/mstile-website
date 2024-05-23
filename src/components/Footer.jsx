@@ -4,9 +4,9 @@ function Footer(){
             <div class="footer-column company-name">
                 <h3>mStile <br/> Design & Services</h3>
                 <div class="socials-row">
-                    <a href="#"><img src="./assets/icons/facebook-icon.svg" alt=""/></a>
-                    <a href="#"><img src="./assets/icons/instagram-icon.svg" alt=""/></a>
-                    <a href="#"><img src="./assets/icons/instagram-icon.svg" alt=""/></a>
+                    <a href="#"><img src="./icons/facebook-icon.svg" alt=""/></a>
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt=""/></a>
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt=""/></a>
                 </div>
             </div>
             <div class="footer-column">

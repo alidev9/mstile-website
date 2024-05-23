@@ -1,7 +1,7 @@
 function Header(){
     return (
         <header>
-            <img src="./assets/mstile-logo.png" alt="mStile Logo"/>
+            <img src="/mstile-logo.png" alt="mStile Logo"/>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>

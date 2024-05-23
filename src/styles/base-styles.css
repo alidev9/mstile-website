@@ -28,7 +28,7 @@ html{
 
 body{
     margin: 0;
-    background-image: url('/assets/white-gold-background.png');
+    background-image: url('/white-gold-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -85,7 +85,7 @@ header > .header-banner{
     width: 1043px;
     height: 201px;
     color: white;
-    background-image: url('/assets/header-banner.jpg');
+    background-image: url('/header-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(90%);

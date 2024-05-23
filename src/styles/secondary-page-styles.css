@@ -1,0 +1,57 @@
+main{
+    font-family: "Libre Baskerville";
+}
+
+main h1{
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin: 92px 0 0 0;
+}
+
+main .info-container{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 92px 128px 0 128px;
+    width: 920px;
+    align-items: center;
+}
+
+.info-container .image-block{
+    /*padding accounts for 32px margin on paragraphs*/
+    padding: calc(92px - 32px) 0 92px  0;
+}
+
+p:not(:last-of-type){
+    margin-bottom: 32px;
+}
+
+/*FAQ page styles*/
+.faq-item-container:not(:last-child){
+    margin-bottom: 92px;
+}
+
+.faq-item-container h2{
+    margin-bottom: 48px;
+}
+
+/*AboutUs page styles*/
+.aboutus-image-row-container{
+    display: flex;
+    gap: 48px;
+}
+
+/*Services page styles*/
+.services-image-row-container{
+    display: flex;
+    gap: 24px;
+}
+
+.services-image-column{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.services-image-column-container > img{
+    display: block;
+}

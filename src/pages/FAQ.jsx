@@ -1,5 +1,4 @@
-import '../styles/base-styles.css'
-import '../styles/faq.css'
+import '../styles/secondary-page-styles.css'
 import ContactForm from '../components/ContactForm.jsx'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -40,7 +39,7 @@ function FAQ(){
     return (
         <main>
             <h1>Frequently Asked Questions</h1>
-            <div className="faq-list-container">
+            <div className="info-container">
                 {faqData.map((faqItem) => {
                     return (
                         <div key={faqItem.id} className="faq-item-container">
