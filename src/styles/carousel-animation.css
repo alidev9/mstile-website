@@ -1,4 +1,4 @@
-.services-page .carousel-container{
+.carousel-container{
     width: 960px;
     height: 540px;
     overflow: hidden;
@@ -9,30 +9,45 @@
     animation-name: animate-services-carousel;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 7s;
+    animation-direction: normal;
+    animation-duration: 13.5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-.services-page .carousel img{
-    width: 960px;
+.carousel img{
+    min-width: 960px;
     height: 540px;
-    object-fit: cover;
 }
 
+/*The time the animation remains still is between keyframes that have the same property.*/
+/*Undeclared keyframes are the time it takes for an animation to conclude.*/
+/*The animation-duration can be increased when more animations are needed.*/
+
+/*current animation-duration should be 13.5s*/
+/*pauses last 3s = 23% rounded up*/
+/*each carousel transition lasts 1.5s = 11% rounded down*/
+
 @keyframes animate-services-carousel{
-    /*transition animations last 5% of the animation-duration*/
-    /*the frame stays still for 20% of the animation-duration*/
     0%{
-        
+
     }
-    47%{
+    11%{
         transform: translateX(-960px)
     }
-    98%{
+    34%{
         transform: translateX(-960px)
+    }
+    45%{
+        transform: translateX(calc(-960px *2))
+    }
+    68%{
+        transform: translateX(calc(-960px *2))
+    }
+    79%{
+        transform: translateX(calc(-960px *3))
     }
     100%{
-        
+        transform: translateX(calc(-960px *3))
     }
 }

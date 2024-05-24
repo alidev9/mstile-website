@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm.jsx'
 
 function Services(){
     return (
-        <main className="services-page">
+        <main>
             <h1>Services</h1>
             <div className="info-container">
                 <p>Our most provided service within our company is our full bathroom installations.</p>
@@ -12,6 +12,7 @@ function Services(){
                     <div className="carousel">
                         <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="" />
                         <img src="/services-images/mstile-bathroom-gallery-8.png" alt=""/>
+                        <img src="/services-images/white-tiles-bathroom.jpg" alt="" />
                         <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="" />
                     </div>
                 </div>

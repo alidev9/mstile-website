@@ -1,4 +1,5 @@
 import '../styles/home.css'
+import '../styles/carousel-animation.css'
 
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
@@ -34,7 +35,14 @@ function Home(){
                         </p>
                     </div>
                 </div>
-                <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="Stretch Ceiling Design" className="middle-image"/>
+                <div className="carousel-container image-block middle-image">
+                    <div className="carousel">
+                        <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="" />
+                        <img src="/services-images/mstile-bathroom-gallery-8.png" alt=""/>
+                        <img src="/services-images/white-tiles-bathroom.jpg" alt="" />
+                        <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="" />
+                    </div>
+                </div>
                 <div className="feature-container stretch-ceiling">
                     <h2>Introducing Innovation...</h2>
                     <p>
