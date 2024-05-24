@@ -14,19 +14,19 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/mstile-website/',
     element: <Home />
   },
   {
-    path: '/about-us',
+    path: '/mstile-website/about-us',
     element: <AboutUs />
   },
   {
-    path: '/frequently-asked-questions',
+    path: '/mstile-website/frequently-asked-questions',
     element: <FAQ />
   },
   {
-    path: '/services',
+    path: '/mstile-website/services',
     element: <Services />
   }
 ])

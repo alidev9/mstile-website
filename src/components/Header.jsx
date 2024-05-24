@@ -1,13 +1,13 @@
 function Header(){
     return (
         <header>
-            <img src="/mstile-logo.png" alt="mStile Logo"/>
+            <img src="/mstile-website/mstile-logo.png" alt="mStile Logo"/>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/frequently-asked-questions">FAQ</a></li>
-                    <li><a href="/services">Services</a></li>
+                    <li><a href="/mstile-website/">Home</a></li>
+                    <li><a href="/mstile-website/about-us">About Us</a></li>
+                    <li><a href="/mstile-website/frequently-asked-questions">FAQ</a></li>
+                    <li><a href="/mstile-website/services">Services</a></li>
                 </ul>
             </nav>
             <div className="header-banner">
