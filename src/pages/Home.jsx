@@ -1,9 +1,6 @@
 import '../styles/home.css'
 import '../styles/carousel-animation.css'
 
-import Header from '../components/Header.jsx'
-import Footer from '../components/Footer.jsx'
-
 function Home(){
     return (
             <main className='homepage-container'>
