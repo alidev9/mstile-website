@@ -1,0 +1,38 @@
+.services-page .carousel-container{
+    width: 960px;
+    height: 540px;
+    overflow: hidden;
+}
+
+.carousel{
+    display: flex;
+    animation-name: animate-services-carousel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.services-page .carousel img{
+    width: 960px;
+    height: 540px;
+    object-fit: cover;
+}
+
+@keyframes animate-services-carousel{
+    /*transition animations last 5% of the animation-duration*/
+    /*the frame stays still for 20% of the animation-duration*/
+    0%{
+        
+    }
+    47%{
+        transform: translateX(-960px)
+    }
+    98%{
+        transform: translateX(-960px)
+    }
+    100%{
+        
+    }
+}

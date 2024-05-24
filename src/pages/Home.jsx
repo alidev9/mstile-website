@@ -5,7 +5,7 @@ import Footer from '../components/Footer.jsx'
 
 function Home(){
     return (
-            <main>
+            <main className='homepage-container'>
                 <div className="feature-container">
                     <img src="/homepage-images/float-image-1.jpg" alt=""/>
                     <div className="feature-text-wrapper">

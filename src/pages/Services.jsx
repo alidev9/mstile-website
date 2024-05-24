@@ -1,14 +1,19 @@
 import '../styles/secondary-page-styles.css'
+import '../styles/carousel-animation.css'
 import ContactForm from '../components/ContactForm.jsx'
 
 function Services(){
     return (
-        <main>
+        <main className="services-page">
             <h1>Services</h1>
             <div className="info-container">
                 <p>Our most provided service within our company is our full bathroom installations.</p>
-                <div className="carousel-container">
-                    <img src="/services-images/mstile-bathroom-gallery-8.png" alt="" className="image-block"/>
+                <div className="carousel-container image-block">
+                    <div className="carousel">
+                        <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="" />
+                        <img src="/services-images/mstile-bathroom-gallery-8.png" alt=""/>
+                        <img src="/homepage-images/stretch-ceiling-design-1 1.jpg" alt="" />
+                    </div>
                 </div>
                 <p>Wether you are after a full bathroom renovation or simply a small tiling job, we are here to help with any of the services required above.</p>
                 <div className="services-image-row-container image-block">

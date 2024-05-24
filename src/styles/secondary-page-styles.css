@@ -5,14 +5,16 @@ main{
 main h1{
     font-size: 48px;
     font-weight: 400;
+    letter-spacing: 7px;
+    font-style: italic;
     text-align: center;
-    margin: 92px 0 0 0;
+    margin: 92px 0;
 }
 
 main .info-container{
     display: flex;
     flex-flow: column nowrap;
-    padding: 92px 128px 0 128px;
+    padding: 0 128px;
     width: 920px;
     align-items: center;
 }
