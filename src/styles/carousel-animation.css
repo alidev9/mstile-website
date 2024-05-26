@@ -1,6 +1,6 @@
 .carousel-container{
-    width: 960px;
-    height: 540px;
+    width: 1043px;
+    height: 586.7px;
     overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .carousel img{
-    min-width: 960px;
+    min-width: 1043px;
     height: 540px;
 }
 
@@ -33,21 +33,57 @@
 
     }
     11%{
-        transform: translateX(-960px)
+        transform: translateX(-1043px)
     }
     34%{
-        transform: translateX(-960px)
+        transform: translateX(-1043px)
     }
     45%{
-        transform: translateX(calc(-960px *2))
+        transform: translateX(calc(-1043px * 2))
     }
     68%{
-        transform: translateX(calc(-960px *2))
+        transform: translateX(calc(-1043px * 2))
     }
     79%{
-        transform: translateX(calc(-960px *3))
+        transform: translateX(calc(-1043px * 3))
     }
     100%{
-        transform: translateX(calc(-960px *3))
+        transform: translateX(calc(-1043px * 3))
+    }
+}
+
+@media (576px <= width <= 1279px){
+    .carousel-container{
+        width: 512px;
+        height: 288px;
+        overflow: hidden;
+    }
+    .carousel img{
+        min-width: 512px;
+        height: 288px;
+    }
+
+    @keyframes animate-services-carousel{
+        0%{
+    
+        }
+        11%{
+            transform: translateX(-512px)
+        }
+        34%{
+            transform: translateX(-512px)
+        }
+        45%{
+            transform: translateX(calc(-512px * 2))
+        }
+        68%{
+            transform: translateX(calc(-512px * 2))
+        }
+        79%{
+            transform: translateX(calc(-512px * 3))
+        }
+        100%{
+            transform: translateX(calc(-512px * 3))
+        }
     }
 }
