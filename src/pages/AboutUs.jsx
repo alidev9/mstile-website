@@ -8,7 +8,7 @@ function AboutUs(){
             <div className="info-container">
                 <p>mStile is a proffesional bathroom fitting company based in the South West area covering the whole of South West and Central London. After many years of providing outstanding bathroom fitting services.</p>
                 <p>We are proud to announce that very soon we will be opening an offcial showroom. Such a showroom will deliver a unqiue face to face consultation experience about all  the products that we offer and give cleints an idea of the best mixes bretween desgin elegance and optimal funactioanlity. Along with free home surveys to help you design and budget for your ideal project.</p>
-                <div className="aboutus-image-row-container image-block">
+                <div className="aboutus-image-container image-block">
                     <img src="/mstile-website/about-us-images/harmony-suites-monte-carlo-sunny-beach-8.png" alt="" />
                     <img src="/mstile-website/about-us-images/image-5.png" alt="" />
                 </div>

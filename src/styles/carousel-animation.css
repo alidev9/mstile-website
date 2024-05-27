@@ -6,7 +6,7 @@
 
 .carousel{
     display: flex;
-    animation-name: animate-services-carousel;
+    animation-name: animate-carousel;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -28,7 +28,7 @@
 /*pauses last 3s = 23% rounded up*/
 /*each carousel transition lasts 1.5s = 11% rounded down*/
 
-@keyframes animate-services-carousel{
+@keyframes animate-carousel{
     0%{
 
     }
@@ -53,6 +53,9 @@
 }
 
 @media (576px <= width <= 1279px){
+    .carousel{
+        animation-name: animate-carousel-tablet;
+    }
     .carousel-container{
         width: 512px;
         height: 288px;
@@ -63,7 +66,7 @@
         height: 288px;
     }
 
-    @keyframes animate-services-carousel{
+    @keyframes animate-carousel-tablet{
         0%{
     
         }

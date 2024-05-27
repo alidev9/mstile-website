@@ -80,10 +80,6 @@ p:not(:last-of-type){
     padding: 0 24px;
 }
 
-.main-banner-1 + p + p{
-    margin-bottom: 128px;
-}
-
 @media (576px <= width <= 1279px){
     .homepage-container{
         width: 512px;
@@ -157,10 +153,6 @@ p:not(:last-of-type){
     .main-banner-1 + p,
     .main-banner-1 + p + p{
         padding: 0 11.78px;
-    }
-    
-    .main-banner-1 + p + p{
-        margin-bottom: 62.8px;
     }
 }
 

@@ -123,6 +123,7 @@ footer{
     max-width: 1920px;
     box-sizing: border-box;
     padding: 32px;
+    margin-top: 92px;
 }
 
 footer > .footer-column{

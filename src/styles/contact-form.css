@@ -1,6 +1,6 @@
 .contact-form{
     width: 768px;
-    margin: 92px 0 92px 128px;
+    margin: 92px 0 0 128px;
     border-radius: 20px;
     background-image: linear-gradient(45deg, #f0f0f0, #f6f6f6);
     box-shadow: 1px 2px 4px 0px rgba(57, 54, 238, 0.25);
@@ -131,4 +131,11 @@
     font-family: "Inter";
     font-style: italic;
     font-size: 10px;
+}
+
+/*contact form hidden on small screens until design is finalized*/
+@media (576px <= width <= 1279px){
+    .contact-form{
+        display: none;
+    }
 }

@@ -17,7 +17,7 @@ function Services(){
                     </div>
                 </div>
                 <p>Wether you are after a full bathroom renovation or simply a small tiling job, we are here to help with any of the services required above.</p>
-                <div className="services-image-row-container image-block">
+                <div className="services-image-container image-block">
                     <img src="/mstile-website/services-images/black-white-hexagon-tiling.png" alt="" />
                     <div className="services-image-column">
                         <img src="/mstile-website/services-images/ceiling-service-painting.png" alt="" />
