@@ -146,6 +146,10 @@ footer > .footer-column{
     text-align: center;
 }
 
+.footer-text-column-wrapper{
+    display: flex;
+}
+
 .footer-column:not(.company-name),
 .footer-column:not(.company-name) > h3{
     font-weight: 500;
@@ -199,14 +203,20 @@ footer > .footer-column{
         margin-top: 4px;
     }
     footer{
-        padding: 32px;
+        padding: 32px 24px;
+        justify-content: space-around;
     }
     .footer-column.company-name{
         margin-right: 32px;
     }
     .footer-column.company-name > h3{
         font-size: 18px;
-        width: 215px;
+        width: fit-content;
+        margin-bottom: 16px;
+    }
+    .footer-column.company-name .socials-row img{
+        width: 32px;
+        vertical-align: bottom;
     }
     .footer-column:not(.company-name) :not(:last-child){
         margin-bottom: 12px;
@@ -215,10 +225,10 @@ footer > .footer-column{
         margin-right: 32px;
     }
     .footer-column:not(.company-name) li{
-        font-size: 12px;
+        font-size: 14px;
     }
     .footer-column:not(.company-name) > h3{
-        font-size: 12px;
+        font-size: 14px;
     }
 
 }
