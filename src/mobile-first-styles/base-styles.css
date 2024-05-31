@@ -1,0 +1,125 @@
+/*css resets*/
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+}
+h1,h2,h3{
+    margin: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+/*static background*/
+body{
+    margin: 0;
+    background-image: url('/white-gold-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow-y: hidden;
+}
+/*ensures that the page is scrollable while the background-image
+remains in the same position*/
+#root{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 32px;
+}
+/*other header elements are sized relative to the banner*/
+header > .header-banner{
+    width: 340px;
+    height: 128px;
+    color: white;
+    /*linear-gradient is applied to the image to darken it*/
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/header-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.header-banner > h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-banner > div{
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.header-banner > h1,
+.header-banner > div{
+    font-family: "Libre Baskerville";
+}
+
+header > img[alt="mStile Logo"]{
+    width: 112px;
+    filter: invert(1);
+}
+
+nav{
+    width: 288px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+nav ul{
+    display: contents;
+}
+
+nav ul li{
+    font-size: 14px;
+}
+
+nav li:not(nav li:last-child)::after{
+    content: '|';
+    margin: 0 12px;
+}
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Inter";
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+.footer-column.company-name{
+    margin-bottom: 24px;
+    gap: 12px
+}
