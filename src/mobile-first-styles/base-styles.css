@@ -19,7 +19,9 @@ p{
 h1,h2,h3{
     margin: 0;
 }
-
+h2{
+    font-size: 21px;
+}
 html{
     width: 100%;
     height: 100%;
@@ -117,7 +119,7 @@ footer{
     width: 100%;
     padding: 24px;
     box-sizing: border-box;
-    margin-top: 32px;
+    margin-top: 64px;
 }
 .footer-company-info{
     display: flex;
