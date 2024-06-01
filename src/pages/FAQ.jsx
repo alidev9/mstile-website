@@ -1,4 +1,4 @@
-import '../styles/secondary-page-styles.css'
+import '../mobile-first-styles/secondary-page-styles.css'
 import ContactForm from '../components/ContactForm.jsx'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -37,7 +37,7 @@ const faqData = [
 
 function FAQ(){
     return (
-        <main>
+        <main className='secondary-page'>
             <h1>Frequently Asked Questions</h1>
             <div className="info-container">
                 {faqData.map((faqItem) => {

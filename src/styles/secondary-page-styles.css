@@ -19,9 +19,9 @@ main .info-container{
     align-items: center;
 }
 
-p:not(:last-of-type){
+/*p:not(:last-of-type){
     margin-bottom: 32px;
-}
+}*/
 
 .info-container .image-block{
     /*padding accounts for 32px margin on paragraphs*/

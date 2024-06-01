@@ -1,10 +1,10 @@
-import '../styles/secondary-page-styles.css'
+import '../mobile-first-styles/secondary-page-styles.css'
 import '../mobile-first-styles/carousel-animation.css'
 import ContactForm from '../components/ContactForm.jsx'
 
 function Services(){
     return (
-        <main>
+        <main className='secondary-page'>
             <h1>Services</h1>
             <div className="info-container">
                 <p>Our most provided service within our company is our full bathroom installations.</p>

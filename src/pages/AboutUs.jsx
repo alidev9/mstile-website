@@ -1,9 +1,9 @@
-import '../styles/secondary-page-styles.css'
+import '../mobile-first-styles/secondary-page-styles.css'
 import ContactForm from '../components/ContactForm.jsx'
 
 function AboutUs(){
     return(
-        <main>
+        <main className='secondary-page'>
             <h1>About Us</h1>
             <div className="info-container">
                 <p>mStile is a proffesional bathroom fitting company based in the South West area covering the whole of South West and Central London. After many years of providing outstanding bathroom fitting services.</p>

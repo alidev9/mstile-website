@@ -1,0 +1,63 @@
+.contact-form{
+    display: none;
+}
+
+.secondary-page{
+    font-family: "Libre Baskerville";
+    width: 300px;
+}
+
+.secondary-page h1{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-align: center;
+    margin: 48px 0;
+}
+
+.secondary-page .info-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.secondary-page p:not(:last-of-type){
+    margin-bottom: 32px;
+}
+.info-container .image-block{
+    /*padding accounts for 32px margin on paragraphs*/
+    margin: calc(48px - 32px) 0 48px  0;
+    width: 100%;
+}
+.info-container .image-block img{
+    width: 100%;
+}
+
+/*FAQ page styles*/
+.faq-item-container{
+    width: 300px;
+}
+.faq-item-container:not(:last-child){
+    margin-bottom: 64px;
+}
+.faq-item-container h2{
+    margin-bottom: 16px;
+}
+
+/*AboutUs page styles*/
+.aboutus-image-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 48px;
+}
+
+/*Services page styles*/
+.services-image-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+}
+
+.services-image-column > img{
+    display: block;
+}

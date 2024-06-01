@@ -1,4 +1,4 @@
-import '../styles/contact-form.css'
+/*import '../styles/contact-form.css'*/
 
 function CompanyContactData({icon, alt, data}){
     return (
