@@ -60,7 +60,7 @@ header > .header-banner{
     height: 128px;
     color: white;
     /*linear-gradient is applied to the image to darken it*/
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/header-banner.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/header-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -158,4 +158,34 @@ footer{
     font-size: 14px;
 }
 
+@media(480px <= width <= 767px){
+    header img[alt="mStile Logo"]{
+        width: 128px;
+    }
+    nav{
+        width: 384px;
+        margin-top: 28.8px;
+    }
+    nav ul li{
+        font-size: 16px;
+    }
+    nav ul li:not(ul li:last-child)::after{
+        content: '|';
+        margin: 0 12px;
+    }
+    header > .header-banner{
+        width: 430px;
+    }
+    .header-banner > div{
+        margin-top: 6px;
+    }
+    /*TODO: tablet footer styles*/
+}
 
+@media(768px <= width <= 991px){
+
+}
+
+@media(992px <= width){
+
+}

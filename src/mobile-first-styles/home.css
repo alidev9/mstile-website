@@ -49,3 +49,9 @@ p:not(:last-of-type){
     margin: 48px 0;
 }
 
+@media(480px <= width <= 767px){
+    .homepage-container{
+        width: 430px;
+    }
+    
+}
