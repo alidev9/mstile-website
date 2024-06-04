@@ -27,7 +27,6 @@
 .info-container .image-block{
     /*padding accounts for 32px margin on paragraphs*/
     margin: calc(48px - 32px) 0 48px  0;
-    width: 100%;
 }
 .info-container .image-block img{
     width: 100%;
@@ -35,7 +34,10 @@
 
 /*FAQ page styles*/
 .faq-item-container{
-    width: 300px;
+    width: 100%;
+}
+.faq-item-container:nth-child(1){
+    margin-top: 48px;
 }
 .faq-item-container:not(:last-child){
     margin-bottom: 64px;
@@ -62,8 +64,17 @@
     display: block;
 }
 
-@media(480px <= width <= 767px){
+@media(480px <= width){
     .secondary-page{
         width: 400px;
+    }
+}
+
+@media(768px <= width){
+    .secondary-page{
+        width: 560px;
+    }
+    .secondary-page h1{
+        font-size: 28px;
     }
 }

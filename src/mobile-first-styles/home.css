@@ -22,8 +22,8 @@ p:not(:last-of-type){
     margin-bottom: 64px;
 }
 .feature-container:not(.stretch-ceiling) img{
-    align-self: baseline;
-    width: 100%;
+    align-self: center;
+    width: clamp(300px, 100%, 450px);
 }
 .feature-container h2{
     font-weight: 700;
@@ -41,17 +41,24 @@ p:not(:last-of-type){
 }
 .floating-image-1{
     /*account for paragraph margin*/
-    width: 100%;
-    margin: calc(32px - 16px) 0 32px 0;
+    width: 320px;
+    /*in order to adjust horizontal margins*/
+    display: block;
+    margin: calc(32px - 16px) auto 32px auto;
 }
 .main-banner-1{
     width: 100%;
     margin: 48px 0;
 }
 
-@media(480px <= width <= 767px){
+@media(480px <= width){
     .homepage-container{
         width: 430px;
     }
-    
+}
+
+@media(768px <= width){
+    .homepage-container{
+        width: 560px
+    }
 }

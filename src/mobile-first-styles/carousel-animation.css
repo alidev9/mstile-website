@@ -1,5 +1,6 @@
 .carousel-container{
     width: 100%;
+    max-width: 512px;
     height: 176px;
     overflow: hidden;
 }
@@ -49,5 +50,23 @@
     }
     100%{
         transform: translateX(calc(-100% * 3))
+    }
+}
+
+@media(480px <= width){
+    .carousel-container{
+        height: 230px;
+    }
+    .carousel img{
+        height: 230px;
+    }
+}
+
+@media(768px <= width){
+    .carousel-container{
+        height: 288px;
+    }
+    .carousel img{
+        height: 288px;
     }
 }
