@@ -37,7 +37,7 @@
     width: 100%;
 }
 .faq-item-container:nth-child(1){
-    margin-top: 48px;
+    margin-top: 32px;
 }
 .faq-item-container:not(:last-child){
     margin-bottom: 64px;
@@ -54,19 +54,46 @@
 }
 
 /*Services page styles*/
-.services-image-container{
+.info-container .services-image-container{
     display: flex;
     flex-flow: column nowrap;
     gap: 24px;
 }
 
-.services-image-column > img{
+.info-container .services-image-column{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+
+.info-container .services-image-column > img{
+    width: 100%;
     display: block;
 }
 
 @media(480px <= width){
     .secondary-page{
         width: 400px;
+    }
+    /*Services page styles*/
+    .info-container .services-image-container{
+        flex-flow: row nowrap;
+        gap: 24px;
+    }
+    .info-container .services-image-container > img{
+        width: 33%;
+    }
+
+    .info-container .services-image-column{
+        width: 33%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 16px;
+    }
+
+    .info-container .services-image-column > img{
+        width: 100%;
+        display: block;
     }
 }
 

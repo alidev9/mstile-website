@@ -238,5 +238,56 @@ footer{
 }
 
 @media(992px <= width){
-
+    header img[alt="mStile Logo"]{
+        width: 192px;
+    }
+    nav{
+        width: 692px;
+        margin-top: 16px;
+    }
+    nav ul li{
+        font-size: 20px;
+    }
+    nav ul li:not(nav li:last-child)::after{
+        margin: 0 48px;
+    }
+    header .header-banner{
+        margin-top: 16px;
+        width: 768px;
+    }
+    .header-banner h1{
+        font-size: 24px;
+    }
+    .header-banner div{
+        font-size: 16px;
+    }
+    footer{
+        min-width: 100%;
+        max-width: 1920px;
+        padding: 32px;
+    }
+    .footer-company-info{
+        margin-right: 176px;
+    }
+    .footer-company-info h3{
+        font-size: 24px;
+        width: 215px;
+    }
+    .footer-company-info .socials-section img{
+        width: 40px;
+    }
+    .footer-text-section{
+        width: auto;
+        white-space: nowrap;
+    }
+    .footer-text-section:not(:last-child){
+        margin-right: 92px;
+    }
+    .footer-text-section :not(:last-child){
+        margin-bottom: 24px;
+    }
+    .footer-text-section h3,
+    .footer-text-section li{
+        font-size: 16px;
+    }
 }

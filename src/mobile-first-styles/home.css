@@ -62,3 +62,57 @@ p:not(:last-of-type){
         width: 560px
     }
 }
+
+@media(992px <= width){
+    .homepage-container{
+        width: 768px;
+    }
+    .feature-container:not(.stretch-ceiling){
+        flex-flow: row nowrap;
+        margin-bottom: 128px;
+    }
+    .feature-container:not(.stretch-ceiling) img{
+        align-self: baseline;
+    }
+    .feature-container h2{
+        font-size: 24px;
+    }
+
+    :nth-child(1 of .feature-container){
+        flex-flow: row-reverse nowrap;
+    }
+    :nth-child(1 of .feature-container) > .feature-text-wrapper{
+        margin-left: 64px;
+    }
+    :nth-child(2 of .feature-container) > .feature-text-wrapper{
+        margin-right: 64px;
+    }
+    .feature-container.stretch-ceiling{
+        width: 100%;
+    }
+    .feature-container.stretch-ceiling > p:nth-of-type(1){
+        margin-bottom: 32px;
+    }
+
+    /*using flexbox to make an image appear floating*/
+    .floating-section-wrapper{
+        display: flex;
+        gap: 64px;
+    }
+    .floating-image-1{
+        order: 2;
+    }
+    .floating-text-wrapper{
+        margin-top: 12px;
+    }
+    .main-banner-1{
+        width: 1043px;
+        margin-top: 92px;
+        margin-bottom: 64px;
+    }
+    .main-banner-1 + p,
+    .main-banner-1 + p + p{
+        padding: 0 24px;
+    }
+
+}
