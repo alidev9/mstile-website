@@ -41,20 +41,18 @@ function Home(){
                     </div>
                 </div>
                 <div className="feature-container stretch-ceiling">
-                    <h2>Introducing Innovation...</h2>
-                    <p>
-                        Alongside designing and fitting bathrooms, mStile also provides an array of professional tiling options, LVT and Vinyl fitting as well as our 3D illuminated  ceiling confgurations for customers who would like to add something totally different to their home.
-                    </p>
                     <div className="floating-section-wrapper">
-                        <img src="/mstile-website/homepage-images/float-image-3.jpg" alt="" className="floating-image-1"/>
-                        <div className="floating-text-wrapper">
-                            <p>
-                                3D illuminated ceilings, also known as Stretch Ceilings are a smart way to give your bathroom unqiue flare and maxermise the 'wow' effect. Made from highly durable PVC streach material  which gives increased acoustic effect, and is easily washable making an excelelnt addtion to a customised bathroom.
-                            </p>
-                            <p>
-                                If you'd like to find out more about the product in detail please <a href="#">click here</a>.
-                            </p>
-                        </div>
+                    <img src="/mstile-website/homepage-images/float-image-3.jpg" alt="" className="floating-image-1"/>
+                        <h2>Introducing Innovation...</h2>
+                        <p>
+                            Alongside designing and fitting bathrooms, mStile also provides an array of professional tiling options, LVT and Vinyl fitting as well as our 3D illuminated  ceiling confgurations for customers who would like to add something totally different to their home.
+                        </p>
+                        <p>
+                            3D illuminated ceilings, also known as Stretch Ceilings are a smart way to give your bathroom unqiue flare and maxermise the 'wow' effect. Made from highly durable PVC streach material  which gives increased acoustic effect, and is easily washable making an excelelnt addtion to a customised bathroom.
+                        </p>
+                        <p>
+                            If you'd like to find out more about the product in detail please <a href="#">click here</a>.
+                        </p>
                     </div>
                     <img src="/mstile-website/homepage-images/acoustic-wall-covering-designer-company 1.jpg" alt="" className="main-banner-1"/>
                     <p>

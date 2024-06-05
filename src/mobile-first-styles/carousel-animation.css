@@ -70,3 +70,13 @@
         height: 288px;
     }
 }
+
+@media(992px <= width){
+    .carousel-container{
+        max-width: 100%;
+        height: 481px;
+    }
+    .carousel img{
+        height: 481px;
+    }
+}

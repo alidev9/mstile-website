@@ -39,6 +39,16 @@ p:not(:last-of-type){
     width: 100%;
     margin-bottom: 64px;
 }
+.floating-section-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.floating-section-wrapper h2{
+    order: -3;
+}
+.floating-section-wrapper h2+p{
+    order: -2;
+}
 .floating-image-1{
     /*account for paragraph margin*/
     width: 320px;
@@ -65,14 +75,18 @@ p:not(:last-of-type){
 
 @media(992px <= width){
     .homepage-container{
-        width: 768px;
+        width: 900px;
+        gap: 92px;
+        margin-top: 92px;
     }
     .feature-container:not(.stretch-ceiling){
         flex-flow: row nowrap;
-        margin-bottom: 128px;
+        gap: 64px;
+        margin-bottom: 0;
     }
     .feature-container:not(.stretch-ceiling) img{
         align-self: baseline;
+        width: 450px;
     }
     .feature-container h2{
         font-size: 24px;
@@ -80,12 +94,6 @@ p:not(:last-of-type){
 
     :nth-child(1 of .feature-container){
         flex-flow: row-reverse nowrap;
-    }
-    :nth-child(1 of .feature-container) > .feature-text-wrapper{
-        margin-left: 64px;
-    }
-    :nth-child(2 of .feature-container) > .feature-text-wrapper{
-        margin-right: 64px;
     }
     .feature-container.stretch-ceiling{
         width: 100%;
@@ -96,23 +104,24 @@ p:not(:last-of-type){
 
     /*using flexbox to make an image appear floating*/
     .floating-section-wrapper{
-        display: flex;
-        gap: 64px;
+        display: block;
+    }
+    .floating-section-wrapper p{
+        width: 500px;
     }
     .floating-image-1{
-        order: 2;
-    }
-    .floating-text-wrapper{
-        margin-top: 12px;
+        float: right;
+        margin-top: 0;
     }
     .main-banner-1{
-        width: 1043px;
+        width: 100%;
         margin-top: 92px;
         margin-bottom: 64px;
     }
     .main-banner-1 + p,
     .main-banner-1 + p + p{
-        padding: 0 24px;
+        width: 65ch;
+        align-self: center;
     }
 
 }
