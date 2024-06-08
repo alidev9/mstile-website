@@ -27,7 +27,6 @@ function ContactForm(){
         <div className="contact-form">
             <div className="contact-details-company">
                 <img src="/mstile-website/mstile-logo.png" alt="mStile Logo" />
-
                 <div className="company-contact-data-container">
                     <CompanyContactData icon={'/mstile-website/icons/phone-icon.svg'}
                     alt={'Phone Number'} data={'+1 254 8547 956'}/>
