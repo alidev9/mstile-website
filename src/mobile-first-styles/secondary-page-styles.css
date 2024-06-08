@@ -106,4 +106,7 @@
     .secondary-page h1{
         font-size: 28px;
     }
+    .contact-form{
+        display: flex;
+    }
 }
