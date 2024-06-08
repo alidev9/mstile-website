@@ -178,7 +178,6 @@ footer{
     .header-banner > div{
         margin-top: 6px;
     }
-    /*TODO: tablet footer styles*/
     footer{
         flex-flow: row nowrap;
         justify-content: center;
@@ -234,6 +233,9 @@ footer{
     }
     nav ul li{
         font-size: 18px;
+    }
+    .footer-company-info{
+        margin-right: 64px;
     }
 }
 
