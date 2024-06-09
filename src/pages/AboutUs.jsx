@@ -1,4 +1,3 @@
-import '../mobile-first-styles/secondary-page-styles.css'
 import ContactForm from '../components/ContactForm.jsx'
 
 function AboutUs(){

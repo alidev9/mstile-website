@@ -1,5 +1,3 @@
-import '../mobile-first-styles/secondary-page-styles.css'
-import '../mobile-first-styles/carousel-animation.css'
 import ContactForm from '../components/ContactForm.jsx'
 
 function Services(){

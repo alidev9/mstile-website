@@ -1,118 +1,112 @@
-main{
+/* .contact-form{
+    display: none;
+} */
+
+.secondary-page{
     font-family: "Libre Baskerville";
+    width: 300px;
 }
 
-main h1{
-    font-size: 48px;
+.secondary-page h1{
+    font-size: 21px;
     font-weight: 400;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     font-style: italic;
     text-align: center;
-    margin: 92px 0;
+    margin: 48px 0;
 }
 
-main .info-container{
+.secondary-page .info-container{
     display: flex;
     flex-flow: column nowrap;
-    padding: 0 128px;
-    width: 920px;
     align-items: center;
 }
-
-/*p:not(:last-of-type){
+.secondary-page p:not(:last-of-type){
     margin-bottom: 32px;
-}*/
-
+}
 .info-container .image-block{
     /*padding accounts for 32px margin on paragraphs*/
-    padding: calc(92px - 32px) 0 92px  0;
+    margin: calc(48px - 32px) 0 48px  0;
+}
+.info-container .image-block img,
+.info-container img.image-block{
+    width: 100%;
 }
 
 /*FAQ page styles*/
 .faq-item-container{
-    width: 920px;
+    width: 100%;
+}
+.faq-item-container:nth-child(1){
+    margin-top: 32px;
 }
 .faq-item-container:not(:last-child){
-    margin-bottom: 92px;
+    margin-bottom: 64px;
 }
-
 .faq-item-container h2{
-    margin-bottom: 48px;
+    margin-bottom: 16px;
 }
 
 /*AboutUs page styles*/
 .aboutus-image-container{
     display: flex;
+    flex-flow: column nowrap;
     gap: 48px;
+    width: 100%;
 }
 
 /*Services page styles*/
-.services-image-container{
+.info-container .services-image-container{
     display: flex;
+    flex-flow: column nowrap;
     gap: 24px;
 }
 
-.services-image-column{
+.info-container .services-image-column{
     display: flex;
     flex-flow: column nowrap;
+    gap: 16px;
 }
 
-.services-image-column > img{
+.info-container .services-image-column > img{
+    width: 100%;
     display: block;
 }
 
-@media(576px <= width <= 1279px){
-    main{
-        width: 512px;
+@media(480px <= width){
+    .secondary-page{
+        width: 400px;
     }
-    main h1{
-        font-size: 24px;
-        letter-spacing: 5px;
-        margin: 64px 0;
-    }
-    main .info-container{
-        width: 512px;
-        padding: 0;
-    }
-
-    .image-block{
-        width: 512px;
-    }
-
-    /*FAQ page styles*/
-    .faq-item-container{
-        width: 512px;
-    }
-    .faq-item-container:not(:last-child){
-        margin-bottom: 64px;
-    }
-    .faq-item-container h2{
-        margin-bottom: 24px;
-    }
-
-    /*AboutUs page styles*/
-    .aboutus-image-container{
-        flex-flow: column nowrap;
-    }
-
-    p:not(:last-of-type){
-        margin-bottom: 32px;
-    }
-
-    .info-container .image-block{
-        /*padding accounts for 32px margin on paragraphs*/
-        padding: calc(64px - 32px) 0 64px  0;
-    }
-
     /*Services page styles*/
-    .services-image-container{
+    .info-container .services-image-container{
+        flex-flow: row nowrap;
+        gap: 24px;
+    }
+    .info-container .services-image-container > img{
+        width: 33%;
+    }
+
+    .info-container .services-image-column{
+        width: 33%;
+        display: flex;
+        flex-flow: column nowrap;
         gap: 16px;
-        justify-content: center;
     }
-    .services-image-container img{
-        width: 150px;
+
+    .info-container .services-image-column > img{
+        width: 100%;
+        display: block;
     }
-    .services-image-column img:not(:last-child){
-        margin-bottom: 16px;
+}
+
+@media(768px <= width){
+    .secondary-page{
+        width: 700px;
+    }
+    .secondary-page h1{
+        font-size: 28px;
+    }
+    .contact-form{
+        display: flex;
     }
 }

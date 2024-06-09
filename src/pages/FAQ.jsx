@@ -1,4 +1,3 @@
-import '../mobile-first-styles/secondary-page-styles.css'
 import ContactForm from '../components/ContactForm.jsx'
 import { v4 as uuidv4 } from 'uuid'
 

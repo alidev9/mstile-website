@@ -1,5 +1,3 @@
-import '../mobile-first-styles/home.css'
-import '../mobile-first-styles/carousel-animation.css'
 
 function Home(){
     return (

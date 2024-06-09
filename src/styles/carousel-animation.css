@@ -1,6 +1,7 @@
 .carousel-container{
-    width: 1043px;
-    height: 586.7px;
+    width: 100%;
+    max-width: 512px;
+    height: 176px;
     overflow: hidden;
 }
 
@@ -16,8 +17,8 @@
 }
 
 .carousel img{
-    min-width: 1043px;
-    height: 540px;
+    min-width: 100%;
+    height: 176px;
 }
 
 /*The time the animation remains still is between keyframes that have the same property.*/
@@ -33,60 +34,49 @@
 
     }
     11%{
-        transform: translateX(-1043px)
+        transform: translateX(-100%)
     }
     34%{
-        transform: translateX(-1043px)
+        transform: translateX(-100%)
     }
     45%{
-        transform: translateX(calc(-1043px * 2))
+        transform: translateX(calc(-100% * 2))
     }
     68%{
-        transform: translateX(calc(-1043px * 2))
+        transform: translateX(calc(-100% * 2))
     }
     79%{
-        transform: translateX(calc(-1043px * 3))
+        transform: translateX(calc(-100% * 3))
     }
     100%{
-        transform: translateX(calc(-1043px * 3))
+        transform: translateX(calc(-100% * 3))
     }
 }
 
-@media (576px <= width <= 1279px){
-    .carousel{
-        animation-name: animate-carousel-tablet;
-    }
+@media(480px <= width){
     .carousel-container{
-        width: 512px;
-        height: 288px;
-        overflow: hidden;
+        height: 230px;
     }
     .carousel img{
-        min-width: 512px;
+        height: 230px;
+    }
+}
+
+@media(768px <= width){
+    .carousel-container{
         height: 288px;
     }
+    .carousel img{
+        height: 288px;
+    }
+}
 
-    @keyframes animate-carousel-tablet{
-        0%{
-    
-        }
-        11%{
-            transform: translateX(-512px)
-        }
-        34%{
-            transform: translateX(-512px)
-        }
-        45%{
-            transform: translateX(calc(-512px * 2))
-        }
-        68%{
-            transform: translateX(calc(-512px * 2))
-        }
-        79%{
-            transform: translateX(calc(-512px * 3))
-        }
-        100%{
-            transform: translateX(calc(-512px * 3))
-        }
+@media(992px <= width){
+    .carousel-container{
+        max-width: 100%;
+        height: 481px;
+    }
+    .carousel img{
+        height: 481px;
     }
 }

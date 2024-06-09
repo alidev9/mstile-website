@@ -1,161 +1,127 @@
+/*a page's main content has the same width as the header banner*/
 .homepage-container{
-    width: 1043px;
-    margin-top: 128px;
+    width: 320px;
+    box-sizing: border-box;
+    margin-top: 64px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
-
 p:not(:last-of-type){
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
-
 .feature-container{    
     font-family: "Libre Baskerville";
     box-sizing: border-box;
 }
-
 .feature-container:not(.stretch-ceiling){
     display: flex;
     justify-content: center;
-    margin-bottom: 128px;
-}
-
-.feature-container:not(.stretch-ceiling) > img{
-    align-self: baseline;
-}
-
-.feature-container h2{
-    font-size: 24px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-:nth-child(1 of .feature-container){
-    flex-flow: row-reverse nowrap;
-}
-
-:nth-child(1 of .feature-container) > .feature-text-wrapper{
-    margin-left: 64px;
-}
-
-:nth-child(2 of .feature-container) > .feature-text-wrapper{
-    margin-right: 64px;
-}
-
-.feature-container.stretch-ceiling{
-    width: 100%;
-}
-
-.feature-container.stretch-ceiling > p:nth-of-type(1){
-    margin-bottom: 32px;
-}
-
-.middle-image{
-    width: 1043px;
-    margin-bottom: 128px;
-}
-/*using flexbox to make an image appear floating*/
-.floating-section-wrapper{
-    display: flex;
+    flex-flow: column nowrap;
     gap: 64px;
-}
-
-.floating-image-1{
-    order: 2;
-}
-
-.floating-text-wrapper{
-    margin-top: 12px;
-}
-
-.main-banner-1{
-    width: 1043px;
-    margin-top: 92px;
     margin-bottom: 64px;
 }
-
-.main-banner-1 + p,
-.main-banner-1 + p + p{
-    padding: 0 24px;
+.feature-container:not(.stretch-ceiling) img{
+    align-self: center;
+    width: clamp(300px, 100%, 450px);
+}
+.feature-container h2{
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 32px;
+}
+.feature-container.stretch-ceiling{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+.middle-image{
+    width: 100%;
+    margin-bottom: 64px;
+}
+.floating-section-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.floating-section-wrapper h2{
+    order: -3;
+}
+.floating-section-wrapper h2+p{
+    order: -2;
+}
+.floating-image-1{
+    /*account for paragraph margin*/
+    width: 320px;
+    /*in order to adjust horizontal margins*/
+    display: block;
+    margin: calc(32px - 16px) auto 32px auto;
+}
+.main-banner-1{
+    width: 100%;
+    margin: 48px 0;
 }
 
-@media (576px <= width <= 1279px){
+@media(480px <= width){
     .homepage-container{
-        width: 512px;
-        margin-top: 62.8px;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
+        width: 430px;
     }
-    p:not(:last-of-type){
-        margin-bottom: 15.7px;
+}
+
+@media(768px <= width){
+    .homepage-container{
+        width: 560px
+    }
+}
+
+@media(992px <= width){
+    .homepage-container{
+        width: 900px;
+        gap: 92px;
+        margin-top: 92px;
     }
     .feature-container:not(.stretch-ceiling){
-        flex-flow: column nowrap;
-        gap: 62.8px;
-        margin-bottom: 62.8px;
+        flex-flow: row nowrap;
+        gap: 64px;
+        margin-bottom: 0;
+    }
+    .feature-container:not(.stretch-ceiling) img{
+        align-self: baseline;
+        width: 450px;
     }
     .feature-container h2{
-        font-size: 18px;
-        margin-bottom: 32px;
+        font-size: 24px;
     }
-    :nth-child(1 of .feature-container) > .feature-text-wrapper{
-        margin-left: 0;
-    }
-    :nth-child(2 of .feature-container) > .feature-text-wrapper{
-        margin-right: 0;
-    }
-    :nth-child(1 of .feature-container) > img{
-        width: 512px;
-    }
-    /*doesn't fit mobile design*/
-    :nth-child(2 of .feature-container) > img{
-        display: none;
-    }
-    .feature-container:not(.stretch-ceiling) > img{
-        align-self: center;
-    }
-    .feature-container.stretch-ceiling > p:nth-of-type(1){
-        margin-bottom: 15.7px;
-    }
-    .middle-image{
-        width: 512px;
-        margin-bottom: 62.8px;
+
+    :nth-child(1 of .feature-container){
+        flex-flow: row-reverse nowrap;
     }
     .feature-container.stretch-ceiling{
-        display: flex;
-        flex-flow: column nowrap;
+        width: 100%;
     }
+    .feature-container.stretch-ceiling > p:nth-of-type(1){
+        margin-bottom: 32px;
+    }
+
+    /*using flexbox to make an image appear floating*/
     .floating-section-wrapper{
-        display: contents;
-        flex-flow: column nowrap;
-        gap: 64px;
+        display: block;
     }
-    
+    .floating-section-wrapper p{
+        width: 500px;
+    }
     .floating-image-1{
-        order: 0;
-        width: 300px;
-        align-self: center;
-        margin: 48px 0;
-    }
-    
-    .floating-text-wrapper{
-        display: contents;
-        margin-top: 12px;
+        float: right;
+        margin-top: 0;
     }
     .main-banner-1{
-        width: 512px;
-        margin-top: 45.16px;
-        margin-bottom: 31.4px;
+        width: 100%;
+        margin-top: 92px;
+        margin-bottom: 64px;
     }
-    
     .main-banner-1 + p,
     .main-banner-1 + p + p{
-        padding: 0 11.78px;
+        width: 65ch;
+        align-self: center;
     }
-}
-
-@media (320px <= width <= 575px){
 
 }
